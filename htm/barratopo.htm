@@ -1,0 +1,49 @@
+<div id="topogeral">
+  <div class="topo1 smText">
+  <script>
+      if(''!='<NomeCliente>')
+        {document.write('Ol&aacute; <b><NomeCliente></b>. Bem-vindo. <a href=/cadastro.asp?IDLoja=<IDLoja>&logoff=1 target=_top>Sair</a>.')}
+      else 
+        {document.write('Ol&aacute; <b>Visitante</b>. <a href=/cadastro.asp?IDLoja=<IDLoja> target=_top>Clique aqui</a> e fa&ccedil;a seu login.')}
+  </script>
+  </div>
+
+  <div class="topo2 smWhats"><img src="<PathTo file="images/ic_telefone.svg">" alt="Telefone" align="absmiddle"> (11) 3456-7890 &nbsp;&nbsp;<a href='https://api.whatsapp.com/send?phone=5511988881234&text=Ol%C3%A1,%20estou%20com%20d%C3%BAvida,%20pode%20me%20ajudar?' target='_blank'><img src="<PathTo file="images/ic_whatsapp.svg">" alt="WhatsApp" align="absmiddle"> (11) 98888-1234</a></div>
+</div>
+
+<div id="topologo">
+<div class="espaco"><img src="<PathTo file="images/x.gif">" alt="espaco"></div>
+<div class="logo"><a href="/home.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/logotopo.svg">" alt="<NomeLoja>" title="<NomeLoja>"></a></div>
+<div class="sacola"><a href="/addproduto.asp?IDLoja=<IDLoja>"><QtdCesta></a></div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="sidenavlist">
+    <ul>
+      <li><a href="/home.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/ic_menu_home.svg">" alt="Home" title="Home"></a></li>
+      <li><a href="/cadastro.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/ic_menu_user.svg">" alt="Meu Cadastro" title="Meu Cadastro"></a></li>
+      <li><a href="/track.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/ic_menu_pedidos.svg">" alt="Meus Pedidos" title="Meus Pedidos"></a></li>
+      <li><a href="/addproduto.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/ic_menu_sacola.svg">" alt="Minha Sacola" title="Minha Sacola"></a></li>
+      <li><a href="/faleconosco.asp?IDLoja=<IDLoja>"><img src="<PathTo file="images/ic_menu_email.svg">" alt="Contato" title="Contato"></a></li>
+    </ul>
+  </div>
+  <div class="sidecat">Departamentos</div>
+  <ListPathCat out="2" id="-1">
+  <div class="left-bar"><div id="ProductsFilterFC"></div></div>
+  <p><br><br></p>
+</div>
+
+<div class="menufull">
+<div class="menuhamb" onclick="openNav()">&#9776;</div>
+<div id="buscalight">
+  <form name="fBusca" method="GET" action="/ListaProdutos.asp?IDLoja=<IDLojaNum>" id="autocomplete-form">
+    <input type="hidden" name="IDLoja" value="<IDLojaNum>">
+    <input type="hidden" name="Digitada" value="True">
+    <input name="busca" type="text" placeholder="buscar" id="autocomplete">
+    <input id="search_submit" type="submit" name="lupa">
+  </form>
+</div>
+</div>
+<script src="<PathTo file="htm/lojalib.js">"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
