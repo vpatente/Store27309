@@ -1,0 +1,37 @@
+﻿<p18>
+<div id="ProdDestHome">
+<div style="margin-top:10px;">
+<a href="<URLProd>">
+<!-- inicio video -->
+<script>
+function fnVideoImage(){
+            var video1 ="<CodVideoProd>";
+            if (video1 == ""){
+              document.write("<div class='ProdCapaDiv'><img src='<ImagemProdPri>'></div>");
+            }else{
+              document.write("<video id='5' preload='auto' autoplay loop src='https://images-na.ssl-images-amazon.com/images/G/01/gateway/yiyiz/<CodVideoProd>_.mp4' style='left: 0px; top: 0px; overflow: hidden; width: 200px;'></video>");
+            }
+          }
+          fnVideoImage();
+</script>
+<!-- fim video -->
+</a>
+</div>
+<div style="margin-top:3px; line-height:15px;"><a href="<URLProd>" class="EstNomeProdCapa"><NomeProd></a></div>
+<div style="margin-top:3px;"><script>MostraPreco(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<div><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script></div>
+<div class="BotVejaMais"><a href="<URLProd>"><img src="<PathTo file="images/botvejamais.svg">" alt="Veja Mais" /></a></div>
+<div><Lancamento></div>
+</div>
+</p18>
+
+<p21>
+<div id="ProdDestHomeC">
+<div style="margin-top:10px;"><a href="<URLProd>"><div class="ProdCapaDiv"><ImagemProd></div></a></div>
+<div style="margin-top:3px; line-height:15px;"><a href="<URLProd>" class="EstNomeProdCapa"><NomeProd></a></div>
+<div style="margin-top:3px;"><script>MostraPreco(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<div><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script></div>
+<div class="BotVejaMais"><a href="<URLProd>"><img src="<PathTo file="images/botvejamais.svg">" alt="Veja Mais" /></a></div>
+<div><Lancamento></div>
+</div>
+</p21>
