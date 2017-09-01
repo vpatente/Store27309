@@ -1,0 +1,202 @@
+<ProdTop>
+<style>
+#idPageCountFC {display:none;}
+</style>
+
+<script>
+iQtdProds=<QtProd>;
+</script>
+
+<div class="ajustaLista">
+<div class="filtre_resultados"><a href="javascript:void(0)" onclick="openNav()">&#8249;&#8249; filtre os resultados</a></div>
+</ProdTop>
+
+<ProdLista>
+<div id="ProdDestLista">
+<div style="margin-top:10px;">
+<a href="<URLProd>">
+<!-- inicio video -->
+<script>
+function fnVideoImage(){
+            var video1 ="<CodVideoProd>";
+            if (video1 == ""){
+              document.write("<div class='ProdCapaDiv'><img src='<ImagemProdPri>'></div>");
+            }else{
+              document.write("<video id='5' preload='auto' autoplay loop src='https://images-na.ssl-images-amazon.com/images/G/01/gateway/yiyiz/<CodVideoProd>_.mp4' style='left: 0px; top: 0px; overflow: hidden; width: 200px;'></video>");
+            }
+          }
+          fnVideoImage();
+</script>
+<!-- fim video -->
+</a>
+</div>
+<div style="margin-top:3px; line-height:15px;"><a href="<URLProd>" class="EstNomeProdCapa"><NomeProd></a></div>
+<div style="margin-top:3px;"><script>MostraPreco(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<div><script>MostraMaxParcela(<PrecoNum>,<MaxParcelasProdNum>);</script></div>
+<div class="BotVejaMais"><a href="<URLProd>"><img src="<PathTo file="images/botvejamais.svg">" alt="Veja Mais" /></a></div>
+<div><Lancamento></div>
+</div>
+</ProdLista>
+
+<ProdDet>
+<style>
+#idTitTextoFC {display:none;}
+.EstTabTopo {display:none;}
+.filtre_resultados {display:none;}
+</style>
+<!-- Begin: HTML structure -->
+<link rel="stylesheet" type="text/css" href="<PathTo file="htm/css/fc_grid_v1.css">">
+<link rel="stylesheet" href="/js/MagicToolbox/MagicZoomPlusV1/magiczoomplus.css">
+<div class="FCGridMain">
+<div class="FCCodProdGrid" style="padding-bottom:10px;"><PathCat></div>
+<div id="idDivGridImg"><img src="<ImagemProdDet>"></div>
+<div class="FCContentGrid">
+<Lancamento>
+<h1 id="idNameProductGridFC" class="FCNameProductGrid"><NomeProd></h1>
+<div class="FCCodProdGrid">Ref.: <CodProd></div>
+
+<div id="idPriceGridFC" class="FCPriceGrid"><script>MostraPrecoDet(<PrecoNum>,<PrecoOri>,'<CodProd>');</script></div>
+<script>
+(function(){ var e=document.getElementById("idPriceGridFC"); if(e)e.innerHTML+= fnMaxInstallmentsGrid(<PrecoNum>,<MaxParcelasProdNum>) + fnShowEconomyGrid(<PrecoNum>,<PrecoOri>); })();
+</script>
+<br>
+<div id="idMainGridFC_<IDProduto>"></div>
+
+<!-- ZipCode: Begin -->
+<div class="ProductStyleBoxFC"><div id="ShowCEP<IDProduto>"></div></div>
+<!-- ZipCode: End -->
+
+<!-- Compartilhe -->
+<div id="icones_redes_sociais">
+<ul>
+  <li>Compartilhe:</li>
+  <li class="ShareWhatsApp"><a href="whatsapp://send?text=Veja o produto '<NomeProd>'. Segue o link: http://lvfc.co/l<IDLojaNum>/p<IDProduto>" target="_blank"><img src="<PathTo file="images/ic_whatsapp2.svg">" alt="Recomende este produto pelo WhatsApp" title="Recomende este produto pelo WhatsApp"></a></li>
+  <li><ShareFacebook></li>
+  <li><ShareTwitter></li>
+  <li><ShareGooglePlus></li>
+  <li><SharePinterest></li>
+</ul>
+</div>
+<!-- Fim Compartilhe -->
+</div>
+
+<div id="produto3">
+<!-- parte 3 do produto -->
+<div class="TitulosProd">Descri&ccedil;&atilde;o:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left"><img src="<PathTo file="images/x.gif">" width=10 height=1></div>
+<div style="margin-top:15px;float:left;width:100%"><Descricao><DescrHTM></div>
+<div style="margin-top:10px;float:left;width:100%"><DescrURL></div>
+
+<div class="TitulosProd">Recomendamos Tamb&eacute;m:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left"><img src="<PathTo file="images/x.gif">" width=10 height=1></div>
+<div style="margin-top:15px; float:left;"><CrossSelling></div>
+
+<div class="TitulosProd">Aproveite e Compre Junto!</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left"><img src="<PathTo file="images/x.gif">" width=10 height=1></div>
+<BuyTogether>
+
+<div class="TitulosProd">Opini&atilde;o dos Clientes:</div>
+<div style="background-color:#dadada; height:1px; width:100%; float:left;"><img src="<PathTo file="images/x.gif">" width=10 height=1></div>
+<div style="margin:15px auto 20px auto; float:left"><Comments></div>
+<!-- parte 3 do produto -->
+</div>
+</div>
+
+<!-- End: HTML structure -->
+<!-- Begin: JS scripts -->
+<script src="/js/MagicToolbox/MagicZoomPlusV1/magiczoomplus.js"></script>
+<script src="<PathTo file="htm/js/FC_Grid_v1.js">"></script>
+<script>
+fnShowCEPGrid(<IDProduto>); /*FC simulação de frete */
+FCGrid$.fnMultipleZoom("<ImagemProdDet>","<ImagemProdAmp>", false);
+</script>
+<script>
+var aProductOnlyOneGrid=[], aProductListGrid=[];
+/* Begin: Produto principal */
+var sCor = ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+aProductOnlyOneGrid.push(JSON.stringify({IDProduto: <IDProduto>,codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>"}));
+/* End: Produto principal */
+/* Begin: Lista subprodutos */
+<sub>
+var sCor = ("<CorVal>" !="") ? "<CorVal>|<CorRGB>":"";
+aProductListGrid.push(JSON.stringify({IDProduto: <IDProduto>, codProd: "<CodProd>", cor: sCor, estoque: <Estoque>, peso: "<PesoNum>", priceOri: "<PrecoOri>", priceNum: "<PrecoNum>", maxInstallmentsNum: <MaxParcelasProdNum>, adicional1: "<Adicional1Val>", adicional2: "<Adicional2Val>", adicional3: "<Adicional3Val>", adicionalD1: "<AdicionalD1Val>", adicionalD2:"<AdicionalD2Val>", adicionalD3:"<AdicionalD3Val>", imgDet:"<ImagemProdDet>", imgAmp:"<ImagemProdAmp>"}));
+</sub>
+/* End: Lista subprodutos */
+/* Begin: Código opcional para alterar as configurações da grade */
+FCGrid$.myOptions = {
+autoSelect : false,
+cartOnPage : true,
+shippingUpdate : true,
+incMultGrid : false,
+separadorRGBCor : '|',
+qtyDescriptors : 2,
+htmlFlagChecked : '<i class="FCCheckedGrid"></i>',
+imageProduct : 'cor',
+colorName : false,
+colorImg : true,
+colorImgFormat : '.jpg',
+stock: false,
+btnSelectImg : 'botselecionegrid.svg',
+btnBuyImg : 'botcarrinho.svg',
+btnContactUSImg : 'botconsultegrid.svg',
+btnSoldOut : 'botcarrinhoesgotado.svg',
+textGrid : 'Selecione as opções abaixo',
+order : ['cor', 'adicional1', 'adicional2', 'adicional3', 'adicionalD1', 'adicionalD2', 'adicionalD3'],
+nameDescriptor : {
+cor : 'Cor',
+adicional1 : 'Tamanho',
+adicional2 : 'Descritor 2',
+adicional3 : 'Descritor 3',
+adicionalD1 : 'Descritor 4',
+adicionalD2 : 'Descritor 5',
+adicionalD3 : 'Descritor 6'
+},
+textDescriptor : {
+cor : 'Selecione a Cor',
+adicional1 : 'Selecione o Tamanho',
+adicional2 : 'Selecione',
+adicional3 : 'Selecione',
+adicionalD1 : 'Selecione',
+adicionalD2 : 'Selecione',
+adicionalD3 : 'Selecione'
+}
+};
+/* End: Código opcional para alterar as configurações da grade */
+FCGrid$.init("idMainGridFC_<IDProduto>", aProductListGrid, aProductOnlyOneGrid); /* Inicia a grade */
+</script>
+
+<script>
+/* Redes Sociais */
+var sRodapeContent=document.getElementById("icones_redes_sociais");
+if(sRodapeContent)var aImgsShare=sRodapeContent.getElementsByTagName('img');
+if(aImgsShare)
+  for(var i=0;i<aImgsShare.length;i++){
+    if(aImgsShare[i].className=='EstImgShareFacebook'){
+     aImgsShare[i].setAttribute('data-src',FC$.PathImg +'ic_facebook.svg');
+     aImgsShare[i].src=FC$.PathImg +'ic_facebook.svg';
+   }
+    if(aImgsShare[i].className=='EstImgShareTwitter'){
+     aImgsShare[i].setAttribute('data-src',FC$.PathImg +'ic_twitter.svg');
+     aImgsShare[i].src=FC$.PathImg +'ic_twitter.svg';
+   }
+    if(aImgsShare[i].className=='EstImgShareGooglePlus'){
+     aImgsShare[i].setAttribute('data-src',FC$.PathImg +'ic_googleplus.svg');
+     aImgsShare[i].src=FC$.PathImg +'ic_googleplus.svg';
+   }
+    if(aImgsShare[i].className=='EstImgSharePinterest'){
+     aImgsShare[i].setAttribute('data-src',FC$.PathImg +'ic_pinterest.svg');
+     aImgsShare[i].src=FC$.PathImg +'ic_pinterest.svg';
+   }
+  }
+/* Fim Redes Sociais */
+</script>
+
+<!-- End: JS scripts -->
+</ProdDet>
+
+<ProdAmp>
+</ProdAmp>
+
+<ProdBottom>
+</div>
+</ProdBottom>
