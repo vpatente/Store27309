@@ -1,0 +1,59 @@
+<div class="w3-content w3-display-container" id="BannersTopo">
+  <banner 1>
+  <banner 2>
+  <banner 3>
+  <banner 4>
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div id="Destaques"><div class="TitEspaco">&nbsp;</div><div class="TitulosDest">Lan&ccedil;amentos</div><div class="TitEspaco">&nbsp;</div></div>
+<div class="tab_container">
+  <prod out="p18" em="lanc,rand">
+  <prod out="p18" em="lanc,rand">
+  <prod out="p18" em="lanc,rand">
+  <prod out="p18" em="lanc,rand"> 
+</div>
+<div class="BotMaisDet"><a href="/ListaProdutos.asp?IDLoja=<IDLoja>&Lancamento=True"><img src="<PathTo file="images/BotMaisDetalhes.svg">" alt="Veja Mais" /></a></div>
+
+
+<div id="Destaques"><div class="TitEspaco">&nbsp;</div><div class="TitulosDest">Ofertas</div><div class="TitEspaco">&nbsp;</div></div>
+<div class="tab_container">
+  <prod out="p18" em="prom,rand">
+  <prod out="p18" em="prom,rand">
+  <prod out="p18" em="prom,rand">
+  <prod out="p18" em="prom,rand"> 
+</div>
+<div class="BotMaisDet"><a href="/ListaProdutos.asp?IDLoja=<IDLoja>&Promocao=True"><img src="<PathTo file="images/BotMaisDetalhes.svg">" alt="Veja Mais" /></a></div>
+
+
+<div id='newsletter_bg'>
+  <form action="/Newsletter.asp?IDLoja=<IDLoja>" method="get" name="formnews" id="formnews" onsubmit="return ValidaNew();">
+  <input type="hidden" name="IDLoja" value="27309" />
+  <div class='news1'>Assine nossa Newsletter e <b>Ganhe Descontos</b></div>
+  <div class='news2'><input type="text" name="NomeAssinante" class="InputTextNews" value="Digite aqui o seu Nome" onfocus="if (this.value == 'Digite aqui o seu Nome') {this.value='';}" onblur="if (this.value == '') {this.value='Digite aqui o seu Nome';}" /></div>
+  <div class='news3'><input type="text" name="Email" class="InputTextNews" value="Digite aqui o seu Email" onfocus="if (this.value == 'Digite aqui o seu Email') {this.value='';}" onblur="if (this.value == '') {this.value='Digite aqui o seu Email';}" /></div>
+  <div class='news4'><input type="image" name="ok" id="Submit" src="<PathTo file="images/bt_cadastrar.png">" /></div>
+  </form>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var oBannersTopo=document.getElementById("BannersTopo");
+  var x = oBannersTopo.getElementsByClassName("EstImgFC");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
