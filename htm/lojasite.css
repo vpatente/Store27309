@@ -198,30 +198,52 @@ input[name="lupa"]:hover {opacity: 1;}
 .news4 {padding-top:15px; float:left;}
 
 /* Carrinho */
-#TabCesta p {text-align: center;}
-.FCCartRightCol {display:none;}
-.FCCartLeftCol  {float: left; width: 100%;}
-.FCCartLeftCol .FCCartRespTable .FCCartTableTit {font-size: 14px;}
-.FCCartLeftCol .EstTabPedidoTit {background-color:#f2f2f2 !important;}
-.FCCartLeftCol .EstTabPedidoNome {text-decoration:none; color:#000000;}
-.FCCartLeftCol .EstTabPedidoNome:visited {color:#000000;}
-.FCCartLeftCol .EstTabPedidoNome:active  {color:#000000;}
-.FCCartLeftCol .EstTabPedidoNome:hover   {color:#c3aa6b;}
-.FCCartLeftCol .EstTabPedidoNome, .FCCartLeftCol .FCPrice, .FCCartLeftCol .FCCartSubtotalsLabel, .FCCartLeftCol .FCCartItemsQty, .FCCartLeftCol .FCCartCupomLabel {font-size:14px;}
-.FCCartLeftCol .EstTabPedidoRef, .FCCartLeftCol .EstTabPedidoAdicNome, .FCCartLeftCol .EstTabPedidoAdicItem, .FCCartLeftCol .FCCartWeightValue, .FCCartLeftCol .FCCartWeightUnit {font-size:12px;}
-.FCCartLeftCol .FCPrice {color:#000000;}
-.FCCartItemRemove {margin:5px 0 0 0;}
-#FCCartButtons ul li {width: 33.3% !important; padding: 0 10px 0 10px;}
-.FCCartStillShopping button, .FCCartRecalculate button, .FCCartBuy button{font-size: 12px; line-height: 13px; background-color: #a3a3a3;}
-.FCCartStillShopping button:hover, .FCCartRecalculate button:hover{background-color: #666;}
-.FCCartBuy button{background-color:#c3aa6b;font-size:18px;}
-.FCCartBuy button:hover{background-color: #000000;}
-#FCCartFreightSimulationBut, #FCCartSmallFreightSimulationBut {background-color: #a3a3a3;}
-#idTDFreightSimulationFC .EstTabPedido a {font-size:10px; text-transform:uppercase;}
-#idTDFreightSimulationFC .EstTabPedidoTit {background-color: #f2f2f2; font-size: 16px; padding: 6px !important;}
-#idTDFreightSimulationFC .InputButton {font-size:14px; font-weight: 400; color:#ffffff; background-color:#666666; border:none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-border-radius: 3px; margin-left: 4px;}
-#idTDFreightSimulationFC .ZipName {font-size: 12px; color: #555555; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
-#idTDFreightSimulationFC .ZipValue {font-size: 12px; color: #555555; font-family: Arial, Helvetica, sans-serif; font-weight: bold; padding-top: 10px;}
+/* Estilos do CARRINHO */
+span.Titulos {display:block; color:#0b0b0b;font-size:22px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;text-decoration:none;}
+#TabItens {margin-top:15px; width:100%;}
+#TabItens .FCCartRespTable tbody tr td {border:#d4d4d4 !important;}
+#TabItens #idCartItemsFC {border:1px solid #d4d4d4;}
+#TabItens td.EstTabPedidoTit {font-family: 'Montserrat', Arial, sans-serif !important; font-size:14px !important; font-weight:400; color:#565656; border-radius:0 !important; background:#ebebeb !important; text-align:left !important}
+#TabItens td.EstTabPedidoTotal {border-radius:0 !important; background:none !important;}
+#TabItens td.EstTabPedidoFrete {border-radius:0 !important; background:none !important;}
+#TabItens #idColTotalPedidoVistaFC {border-radius:0 !important; background:#e2e2e2 !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens #idTotalPedidoVistaFC {border-radius:0 !important; background:#e2e2e2 !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens p {font-family: 'Montserrat', Arial, sans-serif !important}
+#TabItens td {font-family: 'Montserrat', Arial, sans-serif !important; font-size:14px; padding:8px 4px}
+#TabItens td td {padding:0 4px 4px 4px !important}
+#idCupomFC + tr + tr td {color:#960 !important; font-weight:bold; font-size:20px}
+#TabItens .FCCartQtyInput {text-align: right; width: 30px; height:14px; font-size:12px; font-family: 'Montserrat', Arial, sans-serif;border-radius: 0px; -moz-border-radius: 0px;}
+#TabItens input#Cupom {width:140px !important; height:18px; font-size:14px;border-radius: 3px; -moz-border-radius: 3px;}
+#TabItens input[type="text"] {border:1px solid #d4d4d4; border-radius: 3px; -moz-border-radius: 3px; color:#232323; padding:3px;}
+#TabItens input:focus {border:1px solid #000000}
+#TabItens #idTxtCupomFC {display:inline-block}
+#TabItens .FCPrice {font-size:14px;color:#565656;}
+#TabItens .FCCartSubtotalsLabel {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsQty {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsPrice .FCPrice {font-weight:700; color:#565656; font-size:16px;}
+#TabItens .FCCartCupomLabel {font-size:12px; font-family: 'Montserrat', Arial, sans-serif; text-transform:uppercase;}
+#TabCesta p {text-align:center;}
+#TabCesta .idTxtTrackFC, #TabCesta p.EstContinuarComprando, #TabCesta .EstTabPedidoBot,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome + .EstTabPedidoAdicItem {display:none}
+#TabCesta .EstTabPedidoRef {display:block}
+#TabCesta .FCCartLeftCol {margin-top:-15px;}
+#TabCesta #FCCartButtons {margin-bottom:30px;}
+#TabCesta #FCCartButtons ul li {list-style: none;float: left;width: 33.33% !important;box-sizing: border-box;padding: 0 10px 0 10px;}
+#TabCesta #FCCartRightBuyBut {background-color:#c89947 !important; font-family: 'Montserrat', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartBuyBut {background-color:#c89947 !important; font-family: 'Montserrat', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartSmallFreightSimulationBut {background-color:#a3a3a3 !important}
+#TabCesta #FCCartFreightSimulationBut {background-color:#a3a3a3 !important; padding: 8px 20px 8px 20px;}
+#TabCesta #FCCartRightFreightSimulationBut {background-color:#a3a3a3 !important}
+.FCCartStillShopping button, .FCCartRecalculate button {font-family: 'Montserrat', Arial, sans-serif;font-size: 14px;line-height:14px;background-color:#a3a3a3 !important;}
+#CestaLinha1 {width:100%; text-align:right; overflow:hidden}
+#CestaLinha2 {width:100%; text-align:right; overflow:hidden} 
+#FCCartRightSubtotalPrice {border-bottom:#d4d4d4 1px solid;}
+.FCCartBuy button {font-size:18px;}
+.FCCartRespTable {border: 2px solid #d4d4d4;}
+.FCCartLeftCol {width:100%;}
+.FCCartRightCol {display:none}
+.FCCartFooter {background-color:#ffffff;}
 
 /* Rodape */
 #rodape_alinha {width:100%; margin-top:30px; float:left;}
