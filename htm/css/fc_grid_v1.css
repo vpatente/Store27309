@@ -1,0 +1,183 @@
+/* CSS Grid v1 - 08.07.2015 */
+
+/*MagicZoom*/
+.MagicThumb-caption{padding: 2px 8px!important;}
+
+/* classes geradas dinamicamente:being */
+.FCCorGrid{} 
+.FCAdicional1Grid{}
+.FCAdicional2Grid{}
+.FCAdicional3Grid{}
+.FCAdicionalD1Grid{}
+.FCAdicionalD2Grid{}
+.FCAdicionalD3Grid{}
+/* classes geradas dinamicamente:end */
+
+.FCNameProductGrid {font-size:28px; line-height:28px; margin:0 0 5px 0; color:#000000;}
+.FCPriceGrid {width:100%; height:auto; margin-top:15px;}
+.FCPriceGrid .EstParc {font-size:18px; color:#000000;}
+.FCPriceGrid .Economize {font-size: 14px; color: #c3aa6b; margin-top: 3px;}
+.FCCodProdGrid {font-size:12px; display:block; margin: 0;}
+.FCGridMain {width:100%; max-width:1260px; margin:0 auto;}
+.FCGridMain #idDivGridImg {min-height:400px; padding:0px; float:left;}
+.FCGridMain #idDivGridImg img {max-width:400px; max-height:400px;}
+.FCGridMain #idDivGridImg p {margin: 10px auto;}
+img.ZoomIMG2 {border:1px solid #dadada !important; margin-right:6px;}
+.MagicZoomPlus, .MagicZoomPlus:hover {cursor: pointer !important;}
+.MagicZoomPlusHint {background: none !important; color: #fff !important;}
+.FCContentGrid {width:66%; height:auto; position:relative; float:left; text-align: left !important; margin-left:1.8%;}
+.FCGridMain .FCDescritorGrid {min-width: 26px; min-height: 26px; display: block; text-align: center; border: 1px solid #dadada; padding: 5px; margin: 0; line-height: 26px; border-radius: 26px; -moz-border-radius: 26px; -webkit-border-radius: 26px;}
+.FCBoxGrid {position: relative; width: 100%; height: auto !important; display: table; text-align: left; font-size: 14px; margin-bottom: 15px; z-index: 1;}
+.FCDescritorGridDisabled .FCDescritorGrid {background:#e2e2e2; color:#686868; cursor:not-allowed;}
+.FCSelectedGrid {border-color:#000000;}
+.FCStepGrid {min-height:25px; display: block; text-align: left; border: 0; padding: 0; }
+.FCStepGridNumber {display:none !important; width: 24px; height: 22px; display: inline-block; float:left; padding-top:2px; border-radius:0px; background:#c3aa6b; color:#ffffff; text-align:center;}
+.FCOptionSelected {display: inline-block; font-weight:700;}
+.FCStepGridTitle  {display: inline-block; padding:0; float:left; margin:0 5px 0 0; font-size:15px;}
+.FCStepGridTitle.FCTitQtyInc {margin-left:5px;}
+.FCSoldOutLabel span {background:#eee; color:#dadada;}
+.FCSoldOutLabel .FCFlagEsgotadoGrid {width: 18px; height: 18px; position: absolute; margin: 0; top: 0px; right: -9px; background: #e17600; font-size: 12px; color: #ffffff; line-height: 14px; padding: 0px; border: 1px solid #dadada; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; text-align: center !important; z-index: 1;}
+.FCBoxGrid.FCResumeProduct {padding:0 0 0 0 !important; border:none;}
+.FCDescritorGridActivated  {cursor: pointer;}
+.FCCheckedGrid {width:16px; height:16px; position:absolute; background:url('../../images/checkedgrid.svg') no-repeat; z-index:1; top:0px; right:-4px; display:none;}
+.FCSelectedGrid .FCCheckedGrid {display:block;}
+.FCGridBtnZoom {width:82px; display:block; text-align:center; margin:0 auto;}
+.FCBtnEsgotadoGrid, .FCBtnConsultenos, .FCBtnComprarGrid, .FCBtnSelecioneGrid {max-width:300px; min-width:200px; height:auto; position: relative; text-align:center; cursor:pointer; margin:5px 0; padding: 5px 0 0 0; float: left; text-align: center; margin: 0px;}
+
+/* Calculo do Frete */
+#idShippingValues table {width:70%;}
+#idDivCEPBg {background:#f7f7f7; padding:12px 0 12px 12px;float: left;width:100%; margin-top:5px;}
+#idDivTitCEP {width:98%; float:left;}
+#idDivTitCEP img {width:30px; margin-right:8px;}
+#idDivCalcule {width:20%; float:left; font-size:16px; font-weight:700; margin-top:8px;}
+#idDivCEPCalc img {width:20px;margin-top: 3px;}
+#idDivContentCEP {width:100%; float:left; margin-top:6px;}
+.FieldCEP label {font-size:12px; margin-top:5px;}
+.FieldCEPQty {width:8.5%; float:left;}
+.FieldCEPNum {width:12%; float:left;}
+.freightResult {color:#000000;}
+[id*='idShippingValues'] {width:100%; float:left;}
+[id*='idQtdZip'] {width:25px; height: 14px;}
+[id*='idZip'] {width:80px; height: 14px;}
+.ZipOption {width:100%; float:left; margin-top:6px;}
+.ZipName   {font-size: 12px;font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+.ZipValue  {font-size: 12px;font-family: Arial, Helvetica, sans-serif; font-weight: bold; float: left; margin-left:6px;}
+.ZipObsVal {font-family:Arial, Helvetica, sans-serif; font-size: 12px; float: left;}
+.ShareWhatsApp {display:none;}
+
+/* Detalhe do Produto */
+#produto3 {width:100%; float:left;}
+.TitulosProd {color: #000000; font-size: 22px; font-weight: 400; text-decoration: none; margin-top: 30px; float: left; width: 100%;}
+.EstPathCat {font-family: Arial, Helvetica, sans-serif; font-size:12px;}
+.EstPathCat a {text-decoration:none !important;}
+.EstPathCat .pad {background-position: center center !important;padding: 0;}
+#icones_redes_sociais {margin-top:20px; float:left;}
+#icones_redes_sociais ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;}
+#icones_redes_sociais li {float:left; margin-right:6px;}
+
+/* Steps */
+.FCFCBoxGridIncMult .FCStepGridNumber {margin-top: 4px;}
+.FCFCBoxGridIncMult .FCStepGridTitle {padding: 9px 0;}
+.FCBoxGrid .FCBoxGridBuy .FCBoxGridOnly {border:none; padding:0;}
+.FCBoxGridBuy .FCStepGridNumber {margin-top: 15px;}
+
+/*Tooltip*/
+.FCTooltipGrid { position: absolute; width: 275px; top: 55px; left: 0px; font-size: 14px; padding: 10px 5px; background: #f53421; color: #ffffff; margin: 0px auto !important; z-index:1; -webkit-transition:visibility 0s linear 0.3s,opacity 0.5s linear; transition:visibility 0s linear 0.3s,opacity 0.5s linear;}
+.FCTooltipGrid.On { visibility:visible; opacity:1;}
+.FCTooltipGrid.Off {visibility:hidden; opacity:0;}
+
+/* incMult */
+.QTIncMultGrid {min-width:40px;}
+
+/* Descritores */
+.FCTxtGrid {display:none; width:100%; height:auto; position:relative; margin-bottom:5px;padding:5px 0px; font-size:15px; z-index:1;}
+.FCGridAdicContent span {display:inline-block; padding:0 5px 0 0;}
+.AdicNome {font-weight:400; color:#000000;}
+.AdicItem {font-weight:700; color:#000000;}
+.AdicItemCor {min-width: 20px; min-height: 24px; display: inline-block; margin: 0 5px; border: 1px solid #dadada; border-radius: 14px;}
+
+.FCGridAdicContent.FCGridAdicProductList {float:left;}
+.FCDescritorContent {width:100%; height:auto; display: table; float:left; list-style: none; padding: 0; margin: 10px 0 0 0;}
+.FCDescritorContent li {height: 38px; position: relative; float:left;border: 2px solid transparent; margin:0 5px 0 0;}
+
+
+/* Estilo do Cross Selling */
+#idProdCrossFC {width:100%; float:left; overflow:hidden}
+#idEstLinhaProdCrossFC {display:none;}
+#idTitProdCrossFC {display:none;}
+#idListProdCrossFC li {float:left; overflow:hidden; width:18.3%; min-width:220px; height:260px; margin:0px 10px; text-align:center}
+#idListProdCrossFC .FCPrice {color:#000000; font-weight:700; font-size:14px;}
+.EstNameProdCross {color:#69665d; font-size:14px; font-weight:400;}
+.EstNameProdCross a {color:#69665d; text-decoration:none;}
+.EstNameProdCross a:hover {color:#c3aa6b;}
+.EstFotoProdCross {width:190px;}
+.EstDescrProdCross, .EstCatProdCross, .EstRefProdCross {display:none;} 
+
+/*  Estilo Opinioes de Produtos */
+.EstTabOpinioes {font-size:14px;}
+.EstOpiniaoLinha {color:#e2e2e2;height:1px;width:100%;max-width:1260px;}
+#idTabListaOpFC {font-weight:400;width:100%;max-width:1260px;}
+#idTabListaOpFC hr {border:none; margin-top:0; height:1px;}
+#idTabListaOpFC hr.EstOpiniaoLinha {border-top:1px solid #e2e2e2; margin-top:15px; margin-bottom:7px; height:1px;}
+#idTabListaOpFC #idCommentsClickFC {height:16px; margin-bottom:10px;}
+#idTabListaOpFC .EstOpiniaoNome {font-size:16px; line-height:18px; text-transform:capitalize;}
+#idTabListaOpFC .EstOpiniaoLocal {text-transform:capitalize;}
+
+@media only screen and (max-width: 1280px) {
+#idDivCEPBg {width: 98%;}
+}
+
+@media only screen and (max-width: 1024px) {
+.FCContentGrid {width: 57%;}
+#idDivCEPBg {width: 100%;}
+.FieldCEPQty {width: 12%;}
+.FieldCEPNum {width: 17%;}
+#idListProdCrossFC li {width: 22.9%; margin: 0px 10px 15px 10px;}
+}
+
+@media only screen and (max-width: 768px) {
+.ShareWhatsApp {display:block;}
+.FCContentGrid {width: 43%;}
+#idDivCEPBg {width: 99%;}
+.FieldCEPQty {width: 21%;}
+.FieldCEPNum {width: 30%;}
+#idListProdCrossFC li {width: 30.5%;}
+}
+
+@media only screen and (max-width: 640px) {
+.FCContentGrid {width: 100%; margin-top: 3%; margin-left: 0;}	
+#idDivCEPBg {width: 98%;}
+.FieldCEPQty {width: 11%;}
+.FieldCEPNum {width: 16%;}
+#idListProdCrossFC li {width: 46.5%;height: 250px;}
+}
+
+@media only screen and (max-width: 568px) {
+.FieldCEPQty {width: 12.5%;}
+.FieldCEPNum {width: 18%;}
+#idListProdCrossFC li {width: 46%; height: 260px;}
+}
+
+@media only screen and (max-width: 414px) {
+.FCContentGrid {width: 97%;}
+#idDivCEPBg {width: 100%;}
+.FieldCEPQty {width: 18%;}
+.FieldCEPNum {width: 26%;}
+#idListProdCrossFC li {min-width: 100%; min-height: auto; height: auto;margin: 0px auto 30px auto;}
+}
+
+@media only screen and (max-width: 375px) {
+.FieldCEPQty {width: 20%;}
+.FieldCEPNum {width: 29%;}
+}
+
+@media only screen and (max-width: 360px) {
+.FieldCEPQty {width: 21%;}
+.FieldCEPNum {width: 30%;}
+}
+
+@media only screen and (max-width: 320px) {
+.FCNameProductGrid {font-size: 24px; line-height: 26px;}
+.FieldCEPQty {width: 24%;}
+.FieldCEPNum {width: 34%;}
+}
