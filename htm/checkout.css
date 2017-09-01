@@ -1,0 +1,179 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+/* topo */
+#topofinal {width: 100%; max-width: 1280px; margin: 20px auto 0 auto; background-color: #000; padding: 8px; text-align: center; color: #fff; font-size: 22px;}
+
+/* rodape */
+.FCCheckout .rod4, .FCCheckout .rod5, .FCCheckout .rod6 {width:33%;}
+
+
+/* Login */
+#idChkLoginIntFC {width:100%}
+#idChkEmailLoginFC {margin:0 !important; text-align:left !important;}
+#idTabLoginFC {width:100% !important;}
+#idTabLoginFC #Email {font-size: 14px !important; width: 210px;padding:3px;}
+#idTabLoginFC #SenhaAtual {font-size: 14px !important;}
+#idIdentifyFC #idDivLinkContinueFC {margin:0 !important; padding:0 !important}
+.EstChkDiv {border: 1px solid #DEDEDE;border-radius:0 !important; padding:10px 15px 15px 15px !important; margin-top:10px !important}
+#idTxtYourPasswordFC, #idTxtNoPasswordFC {font-size:12px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;text-decoration:none;}
+
+/* Cadastro */
+#idTabRegisterFC {width:100%}
+#idTabRegisterFC .smText {font-size:14px; font-family: 'Montserrat', Arial, sans-serif;}
+#idRegisterExtFC {width:100%; margin: 0px auto; padding:0;}
+#idRegisterExtFC .EstTabTopo {background:#e2e2e2;color:#565656;font-size:16px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400; padding:4px;}
+#idRegisterExtFC .EstNomeCampo {text-align:left !important}
+#idRegisterExtFC #idTabBotPreviousNextFC {margin-top:10px !important;}
+#idTxtCPFFC, #idTxtCEP1FC, #idTxtPhoneFC, #idTxtNascFC, #idTableLembreteFC, #idTxtLembreteFC .smtext {font-family:Arial, Helvetica, sans-serif !important; font-size:11px !important}
+td.smtext label {font-size:12px; font-family: 'Montserrat', Arial, sans-serif;color:#5f5f5f}
+.FCLabelForm {font-family: 'Montserrat', Arial, sans-serif; padding:5px 0 5px 0; margin-top:0px;}
+.BotVerMais {display:none} 
+#idRegisterFC {width:100%}
+#idRegisterFC .InputText {height:26px !important; font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important; padding-left:3px; border-radius: 0px; -moz-border-radius: 0px;}
+#idRegisterFC #P2Pais, #idRegisterFC #P2SexoFeminino {width:110px !important; height:26px !important; font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important; padding-left:3px;border-radius: 0px; -moz-border-radius: 0px;}
+#idRegisterFC #P2CPF, #idRegisterFC #P2CEP, #idRegisterFC #P2PCEP, #idRegisterFC #P2EnderecoNum, #idRegisterFC #P2EnderecoCompl, #idRegisterFC #P2Telefone, #idRegisterFC #P2Celular, #idRegisterFC #P2DataNasc, #idRegisterFC #P2NomeLocal, #idRegisterFC #P2PCEP, #idRegisterFC #P2PTelefone, #idRegisterFC #P2SenhaCli, #idRegisterFC #P2SenhaCliConfirma {width:110px !important; font-family: 'Montserrat', Arial, sans-serif !important;}
+#idRegisterFC #P2Mensagem {max-width:100% !important; height:100px !important;}
+#idChkFreightFC #idTxtNomeCEPFC {font-size:13px !important; font-weight:700 !important; font-family: 'Montserrat', Arial, sans-serif}
+#idChkFreightFC #idTxtCEPFreightFC {font-size:13px !important; font-weight:400 !important; font-family: 'Montserrat', Arial, sans-serif}
+#idChkFreightFC #idTxtPrecoCEPFC {font-size:13px !important; color:#5f5f5f !important; font-weight:700 !important; font-family: 'Montserrat', Arial, sans-serif}
+#idTxtSenhaMinOriFC {font-size:11px !important; font-family:Arial, Helvetica, sans-serif !important;}
+#idTxtLembreteFC {font-size:11px !important; font-family:Arial, Helvetica, sans-serif !important;}
+
+/* Estilos do PEDIDO */
+.FCTrack table {width:100%;}
+.FCTrack td {padding:3px; font-family: 'Montserrat', Arial, sans-serif;}
+.FCTrack .EstNomeCampo {font-size:12px;}
+.FCTrack .EstCampo {font-size:12px;}
+.FCTrack .EstCampo b {font-size:13px;color:#078e07;}
+.FCTrack #FCFormContainer {margin-top:0px;}
+.FCTrack #idTxtIntroTrackFC {margin:0; font-size:16px; font-weight:400; color:#c89947; font-family: 'Montserrat', Arial, sans-serif;}
+.FCTrack .OrderNumberTrack {font-size:16px; font-weight:bold; color:#c89947; font-family: 'Montserrat', Arial, sans-serif;}
+.FCTrack #idTabOrderDeliveryFC {padding-left:20px; width:48%; float:left; overflow:hidden}
+.FCLabelPw {font-size:12px; font-family: 'Montserrat', Arial, sans-serif;}
+.EstTabPedidoTit {background:#ebebeb;color:#565656;font-size:14px !important;font-family: 'Montserrat', Arial, sans-serif !important;font-weight: 400;}
+.EstTabPedidoNome {font-size:14px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;text-decoration:none; color:#5f5f5f}
+.EstTabPedidoNome:visited {color:#5f5f5f}
+.EstTabPedidoNome:active {color:#5f5f5f}
+.EstTabPedidoNome:hover {color:#c89947;}
+.EstTabPedidoNome a {color:#5f5f5f; text-decoration:none;}
+.EstTabPedido {font-size:14px;background:#FFFFFF;border:1px solid #d4d4d4; font-family: 'Montserrat', Arial, sans-serif}
+.EstTabPedidoNum {font-size:14px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;background:#FFFFFF;}
+.EstTabPedidoTotal {font-size:14px;color:#5f5f5f; background-color:#e2e2e2;font-family: 'Montserrat', Arial, sans-serif;font-weight: bold;}
+.EstTabPedidoFrete {font-size:14px;color:#5f5f5f; background-color:#e2e2e2;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;}
+.EstTabPedidoBot {font-size:14px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;}
+.EstTabPedidoRef {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#888888;}
+.EstTabPedidoAdicNome {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#888888;}
+.EstTabPedidoAdicItem {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 700;color:#888888;}
+.FCCartProdFilter {font-size:12px;font-family: 'Lato', Arial, sans-serif;font-weight: 400;color:#888888;}
+.EstTextoQtd {font-size:12px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;text-align:right;}
+.EstContinuarComprando{font-size:20px;font-family: 'Montserrat', Arial, sans-serif !important;font-weight: 400;color:#5f5f5f}
+#idRecoverOrderFC {font-weight:400; font-size:14px !important; color:#FFFFFF; border:none; background-color:#a3a3a3; padding:1px; margin-top:10px !important}
+#idRecoverOrderFC a {font-weight:700; color:#FFFFFF;}
+.EstButtonRateProd {border-radius: 2px;border: 0px;background: #c89947;font-family: 'Montserrat', Arial, sans-serif;font-size: 12px;line-height:12px;color: #fff;padding: 4px;margin: 3px 0 3px 0;cursor: pointer;}
+
+/* Estilos do CARRINHO */
+span.Titulos {display:block; color:#0b0b0b;font-size:22px;font-family: 'Montserrat', Arial, sans-serif;font-weight: 400;text-decoration:none;}
+#TabItens {margin-top:15px; width:100%;}
+#TabItens .FCCartRespTable tbody tr td {border:#d4d4d4 !important;}
+#TabItens #idCartItemsFC {border:1px solid #d4d4d4;}
+#TabItens td.EstTabPedidoTit {font-family: 'Montserrat', Arial, sans-serif !important; font-size:14px !important; font-weight:400; color:#565656; border-radius:0 !important; background:#ebebeb !important; text-align:left !important}
+#TabItens td.EstTabPedidoTotal {border-radius:0 !important; background:none !important;}
+#TabItens td.EstTabPedidoFrete {border-radius:0 !important; background:none !important;}
+#TabItens #idColTotalPedidoVistaFC {border-radius:0 !important; background:#e2e2e2 !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens #idTotalPedidoVistaFC {border-radius:0 !important; background:#e2e2e2 !important; color:#5f5f5f !important; font-weight:bold !important; font-size:14px !important;}
+#TabItens p {font-family: 'Montserrat', Arial, sans-serif !important}
+#TabItens td {font-family: 'Montserrat', Arial, sans-serif !important; font-size:14px; padding:8px 4px}
+#TabItens td td {padding:0 4px 4px 4px !important}
+#idCupomFC + tr + tr td {color:#960 !important; font-weight:bold; font-size:20px}
+#TabItens .FCCartQtyInput {text-align: right; width: 30px; height:14px; font-size:12px; font-family: 'Montserrat', Arial, sans-serif;border-radius: 0px; -moz-border-radius: 0px;}
+#TabItens input#Cupom {width:140px !important; height:18px; font-size:14px;border-radius: 3px; -moz-border-radius: 3px;}
+#TabItens input[type="text"] {border:1px solid #d4d4d4; border-radius: 3px; -moz-border-radius: 3px; color:#232323; padding:3px;}
+#TabItens input:focus {border:1px solid #000000}
+#TabItens #idTxtCupomFC {display:inline-block}
+#TabItens .FCPrice {font-size:14px;color:#565656;}
+#TabItens .FCCartSubtotalsLabel {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsQty {font-weight:400; color:#565656;}
+#TabItens .FCCartItemsPrice .FCPrice {font-weight:700; color:#565656; font-size:16px;}
+#TabItens .FCCartCupomLabel {font-size:12px; font-family: 'Montserrat', Arial, sans-serif; text-transform:uppercase;}
+#TabCesta p {text-align:center;}
+#TabCesta .idTxtTrackFC, #TabCesta p.EstContinuarComprando, #TabCesta .EstTabPedidoBot,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome,
+#TabCesta .EstTabPedidoRef + .EstTabPedidoAdicNome + .EstTabPedidoAdicItem {display:none}
+#TabCesta .EstTabPedidoRef {display:block}
+#TabCesta .FCCartLeftCol {margin-top:-15px;}
+#TabCesta #FCCartButtons {margin-bottom:30px;}
+#TabCesta #FCCartButtons ul li {list-style: none;float: left;width: 33.33% !important;box-sizing: border-box;padding: 0 10px 0 10px;}
+#TabCesta #FCCartRightBuyBut {background-color:#c89947 !important; font-family: 'Montserrat', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartBuyBut {background-color:#c89947 !important; font-family: 'Montserrat', Arial, sans-serif; font-weight:700;}
+#TabCesta #FCCartSmallFreightSimulationBut {background-color:#a3a3a3 !important}
+#TabCesta #FCCartFreightSimulationBut {background-color:#a3a3a3 !important; padding: 8px 20px 8px 20px;}
+#TabCesta #FCCartRightFreightSimulationBut {background-color:#a3a3a3 !important}
+.FCCartStillShopping button, .FCCartRecalculate button {font-family: 'Montserrat', Arial, sans-serif;font-size: 14px;line-height:14px;background-color:#a3a3a3 !important;}
+#CestaLinha1 {width:100%; text-align:right; overflow:hidden}
+#CestaLinha2 {width:100%; text-align:right; overflow:hidden} 
+#FCCartRightSubtotalPrice {border-bottom:#d4d4d4 1px solid;}
+.FCCartBuy button {font-size:18px;}
+.FCCartRespTable {border: 2px solid #d4d4d4;}
+.FCCartLeftCol {width:100%;}
+.FCCartRightCol {display:none}
+.FCCartFooter {background-color:#ffffff;}
+
+/* Extreme Custom */ 
+#idCheckoutFC div, #idCheckoutFC p, #idCheckoutFC td, #idCheckoutFC span, #idCheckoutFC em, #idCheckoutFC b, #idCheckoutFC li {font-family: 'Montserrat', Arial, sans-serif;}
+#idChkTagsCol2FC, #idChkExtCartFC { position:relative !important; top:0 !important}
+#idChkCol1FC, #idChkCol2FC, #idChkCol3FC { display:block; float:left}
+#idChkAllFC { width:100% !important}
+#idCheckoutFC #idChkCol1FC, #idCheckoutFC #idChkCol2FC, #idCheckoutFC #idChkCol3FC { width:32.3% !important; margin:.5% !important}
+#idChkRegisterIntFC, #idChkPaymentIntFC, #idChkFreightIntFC, #idChkCartIntFC {width:92% !important}
+#idCheckoutFC .EstTitCheckoutFC {border-radius:0 !important; text-align:left !important; background:none !important; font-family: 'Montserrat', Arial, sans-serif !important; font-weight:400 !important; color:#0b0b0b !important; font-size:20px !important; text-transform:uppercase !important; padding:0 0 5px 0 !important}
+#idCheckoutFC .EstChkTabTopo {
+	background:#e2e2e2 !important;
+	font-family: 'Montserrat', Arial, sans-serif !important; font-weight:700 !important;
+	color:#565656 !important;
+	font-size:16px !important;
+	padding:5px !important;
+	border-bottom:10px solid #FFF;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	}
+.EstTabQuadro td { padding:3px 1% !important; vertical-align:middle !important}
+.EstTabQuadro td td { padding:0 !important}
+#idChkFreightIntFC p {font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important; padding:5px 0 !important}
+#idCheckoutFC .EstChkNomeCampo {font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important; width: 32%; padding-right:1% !important; font-weight:400 !important;}
+#idCheckoutFC .EstChkValorCampo {font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important;}
+#idCheckoutFC .EstNomePagto { font-size:13px !important; font-family: 'Montserrat', Arial, sans-serif !important;}
+#idCheckoutFC .EstTabPayment { border-radius:0 !important}
+#idCheckoutFC .EstTabPayment img { margin:6px 0 !important; border-radius:0 !important}
+#idCheckoutFC .EstChkTextoContinuar {font-size: 14px !important; font-weight: 400;color: #078e07;font-family: 'Montserrat', Arial, sans-serif !important;}
+#idCheckoutFC .BotChkPaymentContinue {
+	background-color: #078e07 !important;
+	border: none !important;
+	font-weight: 400 !important;
+	font-size: 16px !important;
+	font-family: 'Montserrat', Arial, sans-serif !important;
+	text-transform:uppercase !important;
+	min-height: 30px !important;
+	padding:10px !important;
+	border-radius: 0px;-moz-border-radius: 0px;-webkit-border-radius: 0px;
+	}
+.EstTabPagto input { margin:0 4px 0 10px !important; border-radius: 0px; -moz-border-radius: 0px;}
+#idCheckoutFC .smText {font-family: Arial, Helvetica, sans-serif !important; font-size:11px !important;}
+#idChkRegisterIntFC .InputText[type="text"] { width:77% !important; border-radius: 0px; -moz-border-radius: 0px;}
+#idCheckoutFC #idTxtLinkContinueFC {background:#c89947 !important; text-transform:uppercase; color:#fff; text-align:center; width:190px; font-size:18px;}
+#idDivLinkContinueFC { background:#c89947 !important; border:0 !important; margin:0 0 10px 1005px}
+#idTabFreteOptFC tr {border-top: 10px solid #fff;}
+#idTabFreteOptFC td input {margin-right:10px;border-radius: 0px; -moz-border-radius: 0px;}
+.EstTabPagtoExt .EstTabPagtoTit {border-radius: 0 !important; -moz-border-radius: 0 !important; -webkit-border-radius: 0 !important;}
+#idCheckoutFC .EstTabPagtoTit {font-size:12px !important;font-family: 'Montserrat', Arial, sans-serif !important; font-weight:700 !important;}
+#idCheckoutFC .smSelect {margin-bottom: 5px;}
+#idCheckoutFC #idFichasLocalFC {background:#e2e2e2 !important; border:0 !important; font-size:11px !important; text-transform:uppercase !important; font-family: Arial, Helvetica, sans-serif !important}
+#idCheckoutFC #idChkTopFC{text-align:right !important; height:45px !important;}
+#idCheckoutFC .EstChkOrderConfirmationFC{text-align:right !important}
+#idCheckoutFC #idTxtFreightFC {background:#e2e2e2;color:#565656;font-size:14px;font-family: 'Montserrat', Arial, sans-serif;}
+#idCheckoutFC #idTxtFreightFC p {font-weight: 400; font-family: 'Montserrat', Arial, sans-serif !important;}
+#idCheckoutFC .InputText {height:24px !important; font-size:14px !important; font-family: 'Montserrat', Arial, sans-serif !important; padding-left:3px;border-radius: 0px; -moz-border-radius: 0px;}
+#idCheckoutFC .smSelect {width:100px; height:22px !important; font-size:12px !important; font-family: 'Montserrat', Arial, sans-serif !important; padding-left:3px;}
+#idCheckoutFC .EstDivParcels .smSelect {width:150px;}
+#idChkCCIntFC .smSelect {width: 57px !important; height: 22px !important; margin-top: 5px !important; margin-left: 10px !important;}
